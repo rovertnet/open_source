@@ -24,5 +24,5 @@ export default {
       blanc: "#fafcfc",
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
