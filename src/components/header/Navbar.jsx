@@ -10,10 +10,10 @@ const user = {
 
 const navigation = [
   { name: "Home", to: "/" },
-  { name: "Scool", to: "/scool"},
+  { name: "Scool", to: "/scool" },
   { name: "About", to: "/about" },
   { name: "Contact", to: "/contact" },
-]
+];
 
 const signUser = [
   {
@@ -45,9 +45,9 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     classNames(
                       isActive
-                        ? "bg-gray-900 text-white"
+                        ? "bg-blak text-white"
                         : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "rounded-md px-3 py-2 text-sm font-medium"
+                      "rounded-md p-5 text-sm font-medium"
                     )
                   }
                   aria-current={item.current ? "page" : undefined}

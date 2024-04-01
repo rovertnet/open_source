@@ -22,7 +22,7 @@ export default {
       purple: "#96a7ff",
       bleue: "#2345a1",
       blanc: "#fafcfc",
-      black: "#0c60a3",
+      blak: "#0c60a3",
     },
   },
   plugins: [],
