@@ -4,16 +4,13 @@ const Authentification = () => {
   return (
     <>
       <div className=" bg-middark h-full max-h-full py-10">
-        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-1Z lg:px-8">
+        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-16 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <img
               className="mx-auto h-16 w-auto"
-              src="../public/mot-de-passe.png"
+              src="../public/utilisateur.png"
               alt="Your Company"
             />
-            <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">
-              Sign in to your account
-            </h2>
           </div>
 
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm bg-white p-10 rounded-lg">
@@ -36,7 +33,6 @@ const Authentification = () => {
                     id="email"
                     name="email"
                     type="email"
-                    autoComplete="email"
                     required
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />

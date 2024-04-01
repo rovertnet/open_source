@@ -5,16 +5,13 @@ const Register = () => {
   return (
     <>
       <div className=" bg-middark h-full max-h-full py-10">
-        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-1Z lg:px-8">
+        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-16 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <img
-              className="mx-auto h-10 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              className="mx-auto h-16 w-auto"
+              src="../public/utilisateur.png"
               alt="Your Company"
             />
-            <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">
-              Sign in to your account
-            </h2>
           </div>
 
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm bg-white p-10 rounded-lg">
