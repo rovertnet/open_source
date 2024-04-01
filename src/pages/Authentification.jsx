@@ -4,7 +4,9 @@ import { Outlet } from "react-router-dom";
 const Authentification = () => {
   return (
     <>
-      Authentification
+      <div className=" bg-middark">
+
+      </div>
       <Outlet />
     </>
   );

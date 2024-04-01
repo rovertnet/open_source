@@ -15,7 +15,7 @@ const signUser = [
   },
   {
     nom: "Log out",
-    href: "#",
+    to: "/login",
   },
 ];
 
