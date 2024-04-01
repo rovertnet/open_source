@@ -47,7 +47,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                       classNames(
                         isActive
-                          ? "bg-dark text-white text-xl font-bold"
+                          ? "bg-dark text-white text-xl font-bold border-["
                           : "text-gray-300 hover:bg-gray-700 hover:text-white",
                         "p-6 text-xl font-bold text-purple"
                       )
