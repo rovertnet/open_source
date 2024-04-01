@@ -46,9 +46,9 @@ const Navbar = () => {
                     className={({ isActive }) =>
                       classNames(
                         isActive
-                          ? "bg-blak text-white text-xl font-bold"
+                          ? "bg-dark text-white text-xl font-bold"
                           : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                        "rounded-md p-5 text-xl font-bold text-purple"
+                        "p-6 text-xl font-bold text-purple"
                       )
                     }
                     aria-current={item.current ? "page" : undefined}
