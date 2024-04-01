@@ -4,7 +4,9 @@ import { Outlet } from "react-router-dom"
 const ClassB = () => {
   return (
     <>
-      <div className=""></div>
+      <div className=" bg-middark">
+        Text
+      </div>
       <Outlet />
     </>
   )
