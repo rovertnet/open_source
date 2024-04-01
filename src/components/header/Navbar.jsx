@@ -47,7 +47,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                       classNames(
                         isActive
-                          ? "bg-dark text-white text-xl font-bold border-["
+                          ? " text-white text-xl font-bold border-white border-b-8"
                           : "text-gray-300 hover:bg-gray-700 hover:text-white",
                         "p-6 text-xl font-bold text-purple"
                       )
@@ -59,11 +59,11 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
-            <button className=" bg-purple p-4 text-dark font-bold text-2xl">
+            <button className=" bg-dark p-6 text-dark font-bold text-2xl">
               {/* Profile dropdown */}
               <Menu as="div" className="relative ml-3">
                 <div>
-                  <Menu.Button className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-bleue focus:ring-offset-2 focus:ring-offset-gray-800">
+                  <Menu.Button className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm ring-2 ring-bleue ring-offset-2 ring-offset-gray-800 focus:outline-none focus:ring-2 focus:ring-bleue focus:ring-offset-2 focus:ring-offset-gray-800">
                     <span className="absolute -inset-1.5" />
                     <span className="sr-only">Open user menu</span>
                     <img
@@ -103,24 +103,18 @@ const Navbar = () => {
               </Menu>
             </button>
 
-             <div className="-mr-2 flex md:hidden">
-                {/* Mobile menu button */}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                  <span className="absolute -inset-0.5" />
-                  <span className="sr-only">Open main menu</span>
-                    {open ? (
-                      <XMarkIcon
-                          className="block h-6 w-6"
-                          aria-hidden="true"
-                      />
-                      ) : (
-                      <Bars3Icon
-                          className="block h-6 w-6"
-                          aria-hidden="true"
-                      />
-                    )}
-                    </Disclosure.Button>
-              </div>
+            <div className="-mr-2 flex md:hidden">
+              {/* Mobile menu button */}
+              <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <span className="absolute -inset-0.5" />
+                <span className="sr-only">Open main menu</span>
+                {open ? (
+                  <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                ) : (
+                  <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                )}
+              </Disclosure.Button>
+            </div>
           </div>
 
           <Disclosure.Panel className={" md:hidden"}>
