@@ -20,7 +20,7 @@ const Navbar = () => {
             </ul>
           </div>
           <button className=" bg-purple p-4 text-dark font-bold text-2xl">
-            Sign up
+            <Link to="/login">Sign up</Link>
           </button>
         </div>
       </div>
