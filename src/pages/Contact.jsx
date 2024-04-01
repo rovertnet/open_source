@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Navbar from '../components/header/Navbar';
 import { Outlet } from 'react-router-dom';
 import PageCompoonent from '../components/PageCompoonent';
@@ -9,8 +9,8 @@ const Contact = () => {
       <Navbar />
       <Outlet />
 
-      <PageCompoonent title="Scool">
-        
+      <PageCompoonent title="Contact">
+        Contact
       </PageCompoonent>
     </>
   );
