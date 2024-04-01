@@ -41,7 +41,7 @@ const Panel = () => {
               <div className="text-xl  font-semibold text-white">Classe B</div>
               <div className=" text-sm text-white">Deuxième Classe</div>
               <div className="mt-8">
-                <Link to="/scool/classb">
+                <Link to="/classb">
                   <FaExternalLinkAlt className=" text-purple text-xl font-bold" />
                 </Link>
               </div>
