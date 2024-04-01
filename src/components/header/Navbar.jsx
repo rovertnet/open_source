@@ -11,10 +11,10 @@ const user = {
 const signUser = [
   {
     nom: "Profile",
-    to: "/login",
+    to: "/profile",
   },
   {
-    nom: "Sign up",
+    nom: "Log out",
     href: "#",
   },
 ];
@@ -24,12 +24,6 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
-
-  const login = (ev) => {
-    ev.preventDefault();
-    console.log("");
-  }
-
   return (
     <>
       <div className=" md:px-10 px-5 bg-bleue">
