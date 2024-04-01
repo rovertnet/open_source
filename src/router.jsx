@@ -8,6 +8,7 @@ import ClassC from "./components/ClassC";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -47,7 +48,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: < />,
+    element: <Contact />,
   },
   {
     path: "/profile",
