@@ -10,8 +10,8 @@ const user = {
 
 const signUser = [
   {
-    nom: "login",
-    href: "#",
+    nom: "Profile",
+    to: "/login",
   },
   {
     nom: "Sign up",
@@ -75,15 +75,15 @@ const Navbar = () => {
                   {signUser.map((item) => (
                     <Menu.Item key={item.nom}>
                       {({ active }) => (
-                        <a
-                          href={item.href}
+                        <Link
+                          to={item.to}
                           className={classNames(
                             active ? "bg-gray-100" : "",
                             "block px-4 py-2 text-sm text-gray-700"
                           )}
                         >
                           {item.nom}
-                        </a>
+                        </Link>
                       )}
                     </Menu.Item>
                   ))}
