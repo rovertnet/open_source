@@ -4,16 +4,16 @@ const Authentification = () => {
   return (
     <>
       <div className=" bg-middark h-full max-h-full py-10">
-        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-16 lg:px-8">
+        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-20 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <img
-              className="mx-auto h-16 w-auto"
+              className="mx-auto h-24 w-auto"
               src="../public/utilisateur.png"
               alt="Your Company"
             />
           </div>
 
-          <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm bg-white p-10 rounded-lg">
+          <div className=" mt-[-10px] sm:mx-auto sm:w-full sm:max-w-sm bg-white p-10 rounded-lg">
             <form
               className="space-y-6"
               action="#"

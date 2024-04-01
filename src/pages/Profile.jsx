@@ -1,6 +1,6 @@
-import { Navbar } from "flowbite-react";
 import { Outlet } from "react-router-dom";
 import PageCompoonent from "../components/PageCompoonent";
+import Navbar from "../components/header/Navbar";
 
 const Profile = () => {
   return (
