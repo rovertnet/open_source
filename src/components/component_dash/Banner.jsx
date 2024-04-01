@@ -2,7 +2,11 @@
 const Banner = () => {
   return (
     <>
-      
+      <div className="">
+        <div className="">
+          
+        </div>
+      </div>
     </>
   )
 }
