@@ -41,7 +41,7 @@ const Panel = () => {
               <div className="text-xl  font-semibold text-white">Classe B</div>
               <div className=" text-sm text-white">Deuxième Classe</div>
               <div className="mt-8">
-                <Link to="/classa">
+                <Link to="classb">
                   <FaExternalLinkAlt className=" text-purple text-xl font-bold" />
                 </Link>
               </div>
@@ -65,7 +65,7 @@ const Panel = () => {
               <div className="text-xl  font-semibold text-white">Classe C</div>
               <div className=" text-sm text-white">Troisième Classe</div>
               <div className="mt-8">
-                <Link to="/classa">
+                <Link to="/classc">
                   <FaExternalLinkAlt className=" text-purple text-xl font-bold" />
                 </Link>
               </div>

@@ -1,8 +1,12 @@
+import { Outlet } from "react-router-dom"
 
 
 const ClassB = () => {
   return (
-    <div>ClassB</div>
+    <>
+      <div className=""></div>
+      <Outlet />
+    </>
   )
 }
 
