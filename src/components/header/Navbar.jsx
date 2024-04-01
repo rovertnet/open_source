@@ -1,6 +1,6 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const user = {
   name: "Tom Cook",
@@ -9,11 +9,11 @@ const user = {
 };
 
 const navigation = [
-  { name: "Home", to: "/", current: true },
-  { name: "Scool", to: "/scool", current: false },
-  { name: "About", to: "/about", current: false },
-  { name: "Contact", to: "/contact", current: false },
-];
+  { name: "Home", to: "/" },
+  { name: "Scool", to: "/scool"},
+  { name: "About", to: "/about" },
+  { name: "Contact", to: "/contact" },
+]
 
 const signUser = [
   {
@@ -37,11 +37,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between gap-2 md:px-10 px-9">
           <div className="flex justify-start items-center gap-20">
             <img src="../../public/vite.svg" alt="" className="w-8 h-8" />
-            <ul className="flex gap-6">
+            <div className="flex gap-6">
               {navigation.map((item) => (
-                <a
+                <NavLink
                   key={item.name}
-                  href={item.href}
+                  to={item.to}
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"
@@ -51,9 +51,9 @@ const Navbar = () => {
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
-                </a>
-            to
-            </ul>
+                </NavLink>
+              ))}
+            </div>
           </div>
           <button className=" bg-purple p-4 text-dark font-bold text-2xl">
             {/* Profile dropdown */}
