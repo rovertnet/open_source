@@ -7,6 +7,7 @@ import ClassB from "./components/ClassB";
 import ClassC from "./components/ClassC";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
+import Register from "./pages/Register";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,10 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Authentification />,
   },
-
+  {
+    path: "/register",
+    element: <Register />,
+  },
   {
     path: "/scool",
     element: <Ecole />,
