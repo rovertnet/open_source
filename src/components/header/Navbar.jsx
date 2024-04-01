@@ -27,7 +27,7 @@ const signUser = [
   },
   {
     nom: "Settings",
-    to: "/login",
+    to: "/settings",
   },
 ];
 
