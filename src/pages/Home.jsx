@@ -8,8 +8,8 @@ const Home = () => {
       <Navbar />
       <Outlet />
       
-      <PageCompoonent>
-        
+      <PageCompoonent title="DashBoard" >
+        Home
       </PageCompoonent>
 
     </>
