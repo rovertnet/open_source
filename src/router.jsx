@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
 import Contact from "./pages/Contact";
+import Settings from "./pages/Settings";
 
 const router = createBrowserRouter([
   {
@@ -55,8 +56,8 @@ const router = createBrowserRouter([
     element: <Profile />,
   },
   {
-    path: "/profile",
-    element: <Profile />,
+    path: "/settings",
+    element: <Settings />,
   },
 ]);
 export default router;
