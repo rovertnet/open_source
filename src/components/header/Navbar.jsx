@@ -8,6 +8,13 @@ const user = {
   imageUrl: "../../public/robert.png",
 };
 
+const navigation = [
+  { name: "Home", to: "/", current: true },
+  { name: "Scool", to: "/scool", current: false },
+  { name: "About", to: "/about", current: false },
+  { name: "Contact", to: "/contact", current: false },
+];
+
 const signUser = [
   {
     nom: "Profile",
@@ -31,15 +38,21 @@ const Navbar = () => {
           <div className="flex justify-start items-center gap-20">
             <img src="../../public/vite.svg" alt="" className="w-8 h-8" />
             <ul className="flex gap-6">
-              <li className="text-xl font-bold text-purple font-pacifico">
-                <Link to="/">Home</Link>
-              </li>
-              <li className="text-xl font-bold text-purple font-pacifico">
-                <Link to="/scool">Scool</Link>
-              </li>
-              <li className="text-xl font-bold text-purple font-pacifico">
-                <Link to="/about">About</Link>
-              </li>
+              {navigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className={classNames(
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "rounded-md px-3 py-2 text-sm font-medium"
+                  )}
+                  aria-current={item.current ? "page" : undefined}
+                >
+                  {item.name}
+                </a>
+            to
             </ul>
           </div>
           <button className=" bg-purple p-4 text-dark font-bold text-2xl">
