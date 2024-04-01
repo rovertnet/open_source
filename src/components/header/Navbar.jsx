@@ -25,6 +25,10 @@ const signUser = [
     nom: "Log out",
     to: "/login",
   },
+  {
+    nom: "Settings",
+    to: "/login",
+  },
 ];
 
 function classNames(...classes) {
