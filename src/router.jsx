@@ -6,6 +6,7 @@ import ClassA from "./components/ClassA";
 import ClassB from "./components/ClassB";
 import ClassC from "./components/ClassC";
 import About from "./pages/About";
+import Profile from "./pages/Profile";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/profile",
+    element: <Profile />,
   },
 ]);
 export default router;
