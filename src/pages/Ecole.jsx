@@ -12,6 +12,7 @@ const Ecole = () => {
 
       <PageCompoonent title="Scool">
         <Panel />
+        
       </PageCompoonent>
     </>
   );
