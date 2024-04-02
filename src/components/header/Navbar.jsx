@@ -42,7 +42,9 @@ const Navbar = () => {
         <div className=" md:px-10 px-5 bg-bleue">
           <div className="flex items-center justify-between gap-2 md:px-10 px-9">
             <div className="flex justify-start items-center gap-20">
-              <img src="../../public/vite.svg" alt="" className="w-8 h-8" />
+              <Link to={"/"}>
+                <img src="../../public/vite.svg" alt="" className="w-8 h-8" />
+              </Link>
               <div className="flex gap-6">
                 {navigation.map((item) => (
                   <NavLink
