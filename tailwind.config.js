@@ -23,6 +23,8 @@ export default {
       bleue: "#2345a1",
       blanc: "#fafcfc",
       blak: "#072163",
+      grayClaire: "#d6dae3",
+      gray: "#b7bac3",
     },
   },
   plugins: [],
