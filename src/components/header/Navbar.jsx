@@ -93,8 +93,8 @@ const Navbar = () => {
                           <Link
                             to={item.to}
                             className={classNames(
-                              active ? "bg-dark" : "",
-                              "block px-4 py-2 text-sm text-dark hover:text-white"
+                              active ? "bg-grayClaire" : "",
+                              "block px-4 py-2 text-sm text-dark hover:text-slate-700"
                             )}
                           >
                             {item.nom}
