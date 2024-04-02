@@ -3,7 +3,7 @@ import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/solid";
 const NewLetter = () => {
   return (
     <>
-      <div className="relative isolate overflow-hidden bg-dark py-16 mt-14 sm:mt-14 lg:mt-36 sm:py-24 lg:py-32">
+      <div className="relative isolate overflow-hidden bg-dark py-16 mt-14 sm:mt-14 lg:mt-48 sm:py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
             <div className="max-w-xl lg:max-w-lg">
@@ -22,7 +22,7 @@ const NewLetter = () => {
                   id="email-address"
                   name="email"
                   type="email"
-                  autoComplete="email"
+                  autoComplete="off"
                   required
                   className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-purple sm:text-sm sm:leading-6"
                   placeholder="Enter your email"
