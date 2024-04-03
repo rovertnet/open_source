@@ -29,9 +29,9 @@ function classNames(...classes) {
 export default function ClassA() {
   return (
     <>
-     <Outlet />
+      <Outlet />
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-gray900">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
