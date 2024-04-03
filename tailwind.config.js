@@ -26,6 +26,7 @@ export default {
       grayClaire: "#d6dae3",
       gray: "#b7bac3",
       gray900: "#292929",
+      blue800: "#000a4c",
     },
   },
   plugins: [],
