@@ -45,30 +45,35 @@ const Navbar = () => {
               <div className=" md:px-10 px-5 ">
                 <div className="flex items-center justify-between gap-2 md:px-10 px-9">
                   <div className="flex justify-start items-center gap-20">
-                    <Link to={"/"}>
-                      <img
-                        src="../../public/vite.svg"
-                        alt=""
-                        className="w-8 h-8"
-                      />
-                    </Link>
-                    <div className="flex gap-6">
-                      {navigation.map((item) => (
-                        <NavLink
-                          key={item.name}
-                          to={item.to}
-                          className={({ isActive }) =>
-                            classNames(
-                              isActive
-                                ? " text-white text-xl font-bold border-white border-b-8"
-                                : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                              "p-6 text-xl font-bold text-purple"
-                            )
-                          }
-                        >
-                          {item.name}
-                        </NavLink>
-                      ))}
+                    <div className=" flex-shrink-0">
+                      <Link to={"/"}>
+                        <img
+                          src="../../public/vite.svg"
+                          alt=""
+                          className="w-8 h-8"
+                        />
+                      </Link>
+                    </div>
+
+                    <div className=" hidden md:block">
+                      <div className="ml-10 flex items-baseline space-x-4">
+                        {navigation.map((item) => (
+                          <NavLink
+                            key={item.name}
+                            to={item.to}
+                            className={({ isActive }) =>
+                              classNames(
+                                isActive
+                                  ? " text-white text-xl font-bold border-white border-b-8"
+                                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                                "p-6 text-xl font-bold text-purple"
+                              )
+                            }
+                          >
+                            {item.name}
+                          </NavLink>
+                        ))}
+                      </div>
                     </div>
                   </div>
                   <button className=" bg-dark p-6 text-dark font-bold text-2xl">
