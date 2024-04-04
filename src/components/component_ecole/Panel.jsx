@@ -12,7 +12,7 @@ const Panel = () => {
     <>
       <section className="mx-5 md:mx-20 my-10 md:my-8">
         <div className="grid md:grid-cols-3 py-4 rounded-md gap-5">
-          <div className="flex items-center gap-5 w-full justify-between md:px-10 px-10 bg-gradient-to-r from-pink to-middark py-5 rounded-md shadow-md shadow-middark">
+          <div className="flex items-center gap-5 w-full justify-between md:px-7 px-8 bg-gradient-to-r from-pink to-middark py-5 rounded-md shadow-md shadow-middark">
             <div>
               <div className="text-xl font-semibold text-white">Classe A</div>
               <div className=" text-sm text-white">Première Classe</div>
@@ -36,7 +36,7 @@ const Panel = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-5 w-full justify-between md:px-10 bg-dark py-5 rounded-md shadow-md shadow-middark">
+          <div className="flex items-center gap-5 w-full justify-between md:px-7 px-8 bg-dark py-5 rounded-md shadow-md shadow-middark">
             <div>
               <div className="text-xl  font-semibold text-white">Classe B</div>
               <div className=" text-sm text-white">Deuxième Classe</div>
@@ -60,7 +60,7 @@ const Panel = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-5 w-full justify-between md:px-10 bg-dark py-5 rounded-md shadow-md shadow-middark">
+          <div className="flex items-center gap-5 w-full justify-between md:px-7 px-8 bg-dark py-5 rounded-md shadow-md shadow-middark">
             <div>
               <div className="text-xl  font-semibold text-white">Classe C</div>
               <div className=" text-sm text-white">Troisième Classe</div>
